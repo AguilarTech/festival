@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Downfield Festival | 22-24 August 2024</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				font-family: 'Inter', sans-serif;
+			}
+			.hero-bg {
+				background-color: #111827;
+				background-image: radial-gradient(
+						at 47% 33%,
+						hsl(162, 77%, 40%) 0,
+						transparent 59%
+					),
+					radial-gradient(
+						at 82% 65%,
+						hsl(218, 39%, 35%) 0,
+						transparent 55%
+					);
+			}
+			.section-glow {
+				position: relative;
+			}
+			.section-glow::before {
+				content: '';
+				position: absolute;
+				top: -100px;
+				left: -100px;
+				right: -100px;
+				bottom: -100px;
+				background: radial-gradient(
+					ellipse at center,
+					rgba(16, 185, 129, 0.1),
+					transparent 70%
+				);
+				z-index: -1;
+				opacity: 0;
+				transition: opacity 0.5s ease-in-out;
+			}
+			.section-glow:hover::before {
+				opacity: 1;
+			}
+			.tab-button.active {
+				background-color: #10b981; /* emerald-500 */
+				color: #111827; /* gray-900 */
+			}
+			.tab-content {
+				display: none;
+			}
+			.tab-content.active {
+				display: block;
+			}
+		</style>
+	</head>
+	<body class="bg-gray-900 text-gray-200">
+		<!-- Header & Navigation -->
+		<header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50">
+			<nav
+				class="container mx-auto px-6 py-4 flex justify-between items-center"
+			>
+				<a href="#" class="text-2xl font-bold text-white tracking-wider"
+					>DOWNFIELD</a
+				>
+				<div class="hidden md:flex items-center space-x-8">
+					<a
+						href="#info"
+						class="text-gray-300 hover:text-emerald-400 transition duration-300"
+						>Info</a
+					>
+					<a
+						href="#schedule"
+						class="text-gray-300 hover:text-emerald-400 transition duration-300"
+						>Schedule</a
+					>
+					<a
+						href="#contact"
+						class="text-gray-300 hover:text-emerald-400 transition duration-300"
+						>Contact Us</a
+					>
+					<a
+						href="#faq"
+						class="text-gray-300 hover:text-emerald-400 transition duration-300"
+						>FAQ</a
+					>
+				</div>
+				<a
+					href="#tickets"
+					class="hidden md:inline-block bg-emerald-500 hover:bg-emerald-400 text-gray-900 font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg shadow-emerald-500/20"
+					>Buy Tickets</a
+				>
+				<button
+					id="mobile-menu-button"
+					class="md:hidden text-gray-200 focus:outline-none"
+				>
+					<svg
+						class="w-6 h-6"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16m-7 6h7"
+						></path>
+					</svg>
+				</button>
+			</nav>
+			<!-- Mobile Menu -->
+			<div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+				<a
+					href="#info"
+					class="block text-gray-300 hover:text-emerald-400 transition duration-300"
+					>Info</a
+				>
+				<a
+					href="#schedule"
+					class="block text-gray-300 hover:text-emerald-400 transition duration-300"
+					>Schedule</a
+				>
+				<a
+					href="#contact"
+					class="block text-gray-300 hover:text-emerald-400 transition duration-300"
+					>Contact Us</a
+				>
+				<a
+					href="#faq"
+					class="block text-gray-300 hover:text-emerald-400 transition duration-300"
+					>FAQ</a
+				>
+				<a
+					href="#tickets"
+					class="block bg-emerald-500 hover:bg-emerald-400 text-gray-900 font-bold py-3 px-6 rounded-lg transition duration-300 text-center mt-4"
+					>Buy Tickets</a
+				>
+			</div>
+		</header>
+
+		<!-- Hero Section -->
+		<main class="hero-bg">
+			<div
+				class="container mx-auto px-6 py-24 md:py-48 text-center text-white"
+			>
+				<h1
+					class="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-4"
+				>
+					Downfield Festival
+				</h1>
+				<p class="text-xl md:text-2xl font-light text-emerald-300 mb-8">
+					A Celebration of Music, Art & Community
+				</p>
+				<p class="text-lg md:text-xl font-medium">
+					22 - 24 August 2024 | Hampshire, UK
+				</p>
+			</div>
+		</main>
+
+		<!-- Info Section -->
+		<section id="info" class="py-20 md:py-32 section-glow">
+			<div class="container mx-auto px-6">
+				<h2 class="text-4xl font-bold text-center mb-12 text-white">
+					Welcome to Downfield
+				</h2>
+				<div
+					class="max-w-4xl mx-auto text-lg text-gray-300 leading-relaxed"
+				>
+					<p class="mb-6">
+						Nestled in the heart of the Hampshire countryside,
+						Downfield is an intimate weekend festival that brings
+						together a curated lineup of groundbreaking musicians,
+						visionary artists, and a community of passionate
+						festival-goers. Born from a desire to create a more
+						personal and immersive festival experience, we're all
+						about discovery, connection, and creating memories that
+						last a lifetime.
+					</p>
+					<p>
+						Expect three days of incredible sounds across two
+						stages, from indie rock and electronic beats to soulful
+						folk and jazz. Explore stunning art installations,
+						participate in workshops, and enjoy delicious food from
+						local vendors. At Downfield, we're building more than a
+						festival; we're building a family.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Schedule Section -->
+		<section id="schedule" class="py-20 md:py-32 section-glow">
+			<div class="container mx-auto px-6">
+				<h2 class="text-4xl font-bold text-center mb-16 text-white">
+					Lineup & Schedule
+				</h2>
+				<!-- Tab buttons -->
+				<div
+					class="flex justify-center mb-8 bg-gray-800 rounded-lg p-1 max-w-sm mx-auto"
+				>
+					<button
+						data-target="main-stage"
+						class="tab-button w-1/2 py-2 px-4 rounded-md font-semibold transition-colors duration-300 active"
+					>
+						Main Stage
+					</button>
+					<button
+						data-target="woodland-stage"
+						class="tab-button w-1/2 py-2 px-4 rounded-md font-semibold transition-colors duration-300"
+					>
+						Woodland Stage
+					</button>
+				</div>
+
+				<!-- Tab content -->
+				<div class="max-w-6xl mx-auto">
+					<!-- Main Stage Calendar -->
+					<div id="main-stage" class="tab-content active">
+						<p class="text-center text-gray-400 mb-4">
+							Schedule for the Main Stage. All times are BST.
+						</p>
+						<iframe
+							src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23111827&ctz=Europe%2FLondon&mode=WEEK&showTitle=0&showNav=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=c_e2de1e51f2244249dfa6d03551572c918361acc797241ea00445558145417088%40group.calendar.google.com&color=%2310B981"
+							style="border-width: 0"
+							width="100%"
+							height="600"
+							frameborder="0"
+							scrolling="no"
+							class="rounded-lg shadow-lg"
+						>
+						</iframe>
+					</div>
+					<!-- Woodland Stage Calendar -->
+					<div id="woodland-stage" class="tab-content">
+						<p class="text-center text-gray-400 mb-4">
+							Schedule for the intimate Woodland Stage. All times
+							are BST.
+						</p>
+						<iframe
+							src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23111827&ctz=Europe%2FLondon&mode=WEEK&showTitle=0&showNav=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=c_55a298a83fa27a9e342735749963e6e7379e54a3779e5af42c8d5236ab303496%40group.calendar.google.com&color=%2334D399"
+							style="border-width: 0"
+							width="100%"
+							height="600"
+							frameborder="0"
+							scrolling="no"
+							class="rounded-lg shadow-lg"
+						>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Tickets Section Placeholder -->
+		<section
+			id="tickets"
+			class="py-20 md:py-32 bg-emerald-500 text-gray-900"
+		>
+			<div class="container mx-auto px-6 text-center">
+				<h2 class="text-4xl font-bold mb-4">
+					Tickets Are On Sale Now!
+				</h2>
+				<p class="text-xl mb-8 max-w-3xl mx-auto">
+					Join us for an unforgettable weekend. Secure your spot at
+					Downfield Festival 2024.
+				</p>
+				<button
+					id="buy-tickets-btn"
+					class="bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-10 rounded-lg transition duration-300 text-xl shadow-lg"
+				>
+					Get Your Tickets
+				</button>
+				<div
+					id="ticket-info"
+					class="mt-8 text-left max-w-md mx-auto hidden"
+				>
+					<p class="font-semibold">
+						Firebase ticketing integration will be implemented here.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Us Section -->
+		<section id="contact" class="py-20 md:py-32 bg-gray-900 section-glow">
+			<div class="container mx-auto px-6">
+				<h2 class="text-4xl font-bold text-center mb-12 text-white">
+					Get In Touch
+				</h2>
+				<div class="max-w-xl mx-auto text-center">
+					<p class="text-lg text-gray-400 mb-8">
+						Have a question that's not in the FAQ? Drop us a line.
+						For all enquiries, please email us at:
+					</p>
+					<a
+						href="mailto:hello@downfieldfest.co.uk"
+						class="text-2xl text-emerald-400 hover:text-emerald-300 font-bold tracking-wide"
+						>hello@downfieldfest.co.uk</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ Section -->
+		<section id="faq" class="py-20 md:py-32 bg-gray-900/50 section-glow">
+			<div class="container mx-auto px-6">
+				<h2 class="text-4xl font-bold text-center mb-16 text-white">
+					Frequently Asked Questions
+				</h2>
+				<div class="max-w-3xl mx-auto space-y-8">
+					<div class="bg-gray-800 p-6 rounded-lg">
+						<h3 class="font-bold text-xl mb-2 text-emerald-400">
+							What are the festival dates?
+						</h3>
+						<p class="text-gray-300">
+							The festival runs from Friday, 22nd August to
+							Sunday, 24th August 2024.
+						</p>
+					</div>
+					<div class="bg-gray-800 p-6 rounded-lg">
+						<h3 class="font-bold text-xl mb-2 text-emerald-400">
+							Can I camp at the festival?
+						</h3>
+						<p class="text-gray-300">
+							Yes, your weekend ticket includes access to our
+							general campsite. We also have options for boutique
+							camping and campervan passes available for purchase.
+						</p>
+					</div>
+					<div class="bg-gray-800 p-6 rounded-lg">
+						<h3 class="font-bold text-xl mb-2 text-emerald-400">
+							Is the festival family-friendly?
+						</h3>
+						<p class="text-gray-300">
+							Absolutely! We welcome festival-goers of all ages.
+							Children under 12 can attend for free. Please note
+							anyone under 18 must be accompanied by an adult.
+						</p>
+					</div>
+					<div class="bg-gray-800 p-6 rounded-lg">
+						<h3 class="font-bold text-xl mb-2 text-emerald-400">
+							How do I get there?
+						</h3>
+						<p class="text-gray-300">
+							We're located near Winchester, Hampshire. Full
+							travel details, including information on shuttle
+							buses from the nearest train station, will be sent
+							to ticket holders closer to the event.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-gray-900/50 py-8">
+			<div class="container mx-auto px-6 text-center text-gray-500">
+				<p>&copy; 2024 Downfield Festival. All Rights Reserved.</p>
+				<p class="text-sm mt-2">Designed with love in the UK.</p>
+			</div>
+		</footer>
+
+		<script>
+			// --- Mobile menu toggle ---
+			const mobileMenuButton =
+				document.getElementById('mobile-menu-button')
+			const mobileMenu = document.getElementById('mobile-menu')
+			mobileMenuButton.addEventListener('click', () => {
+				mobileMenu.classList.toggle('hidden')
+			})
+
+			// Close mobile menu when a link is clicked
+			const mobileMenuLinks = document.querySelectorAll(
+				'#mobile-menu a, header nav a'
+			)
+			mobileMenuLinks.forEach((link) => {
+				link.addEventListener('click', (e) => {
+					if (link.parentElement.id === 'mobile-menu') {
+						mobileMenu.classList.add('hidden')
+					}
+					// Smooth scroll for anchor links
+					if (link.hash !== '') {
+						const headerHeight =
+							document.querySelector('header').offsetHeight
+						const element = document.querySelector(link.hash)
+						if (element) {
+							e.preventDefault()
+							const elementPosition =
+								element.getBoundingClientRect().top
+							const offsetPosition =
+								elementPosition +
+								window.pageYOffset -
+								headerHeight
+
+							window.scrollTo({
+								top: offsetPosition,
+								behavior: 'smooth'
+							})
+						}
+					}
+				})
+			})
+
+			// --- Ticket button placeholder ---
+			const buyTicketsButton = document.getElementById('buy-tickets-btn')
+			const ticketInfo = document.getElementById('ticket-info')
+			buyTicketsButton.addEventListener('click', () => {
+				ticketInfo.classList.remove('hidden')
+				buyTicketsButton.textContent = 'Coming Soon!'
+				buyTicketsButton.disabled = true
+			})
+
+			// --- Schedule Tabs ---
+			const tabButtons = document.querySelectorAll('.tab-button')
+			const tabContents = document.querySelectorAll('.tab-content')
+
+			tabButtons.forEach((button) => {
+				button.addEventListener('click', () => {
+					const targetId = button.dataset.target
+
+					// Update button styles
+					tabButtons.forEach((btn) => {
+						btn.classList.remove('active')
+					})
+					button.classList.add('active')
+
+					// Show/hide tab content
+					tabContents.forEach((content) => {
+						if (content.id === targetId) {
+							content.classList.add('active')
+						} else {
+							content.classList.remove('active')
+						}
+					})
+				})
+			})
+		</script>
+	</body>
+</html>
